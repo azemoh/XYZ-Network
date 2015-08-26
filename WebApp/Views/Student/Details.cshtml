@@ -1,0 +1,49 @@
+@model WebApp.Models.Student
+
+@{
+    ViewBag.Title = Model.User.FirstName + "'s Details";
+}
+
+@Html.Partial("_NavPartial")
+<div id="main" class="col-sm-9">
+    <h2>@ViewBag.Title</h2>
+    <div class="view-head clearfix">
+        <span class="pull-right">
+            <a href="@Url.Action("Edit", "Student", new { id = Model.StudentId })" class="button">
+                <i class="fa fa-edit fa-fw"></i>Edit
+            </a>
+            <a href="@Url.Action("Index", "Student")" class="button">
+                <i class="fa fa-chevron-circle-left fa-fw"></i>Back to List
+            </a>
+        </span>
+    </div>
+
+
+    <div class="board profile-head">
+        @if(Model.User.Photo != null) {
+            <img src="data:img;base64,@System.Convert.ToBase64String(Model.User.Photo)" alt="Photo" class="img-thumbnail" />
+        } else {
+            <img src="~/Content/Images/profile-img.png" alt="Photo" class="img-thumbnail" />
+        }
+        <h3 class="name">@Model.User.Name</h3>
+        <p class="title">@Model.User.AccountType<span> | @Model.User.Sex</span></p>
+        <div class="row contact">
+            <div class="col-xs-6">
+                <i class="fa fa-envelope-o"></i>@Model.User.Email
+            </div>
+            <div class="col-xs-6">
+                <i class="fa fa-phone"></i>@Model.User.PhoneNumber
+            </div>
+        </div>
+    </div>
+    <div>
+        <h4>Test Scores:</h4>
+        @if(Model.TestScores.Count != 0) {
+            foreach(WebApp.Models.TestScore t in Model.TestScores) {
+                <strong>@t.Test.Title :</strong> @t.Score
+            }
+        } else {
+            <p>This Student have not taken any test.</p>
+        }
+    </div>
+</div>

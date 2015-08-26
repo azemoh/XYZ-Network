@@ -1,0 +1,265 @@
+
+#messanger {
+	.body {
+		display: none
+	}
+	width: 320px;
+	position: fixed;
+	right: 5px;
+	bottom: 0;
+	box-shadow: 0 0 10px #aaa;
+	overflow: hidden;
+	.head {
+		width: 100%;
+		background: $main-color;
+		color: #fff;
+		text-align: center;
+		font-size: 18px;
+		padding: 5px;
+		cursor: pointer;
+	}
+	.message-area {
+		padding: 18px 18px 0;
+		height: 380px;
+		overflow-y: scroll;
+		font-size: 13px;
+		background: #eee;
+
+		&::-webkit-scrollbar {
+			width: 8px;
+		}
+		&::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $main-color;
+			border-radius: 5px;
+		}
+
+		.message-item {
+			@include display(flex);
+			@include justify-content(space-between);
+			margin-bottom: 20px;
+			.image {
+				width: 40px;
+				img {
+					border-radius: 4px;
+					max-width: 100%;
+				}
+			}
+			.message {
+				width: 82%;
+				background: #fff;
+				border-radius: 4px;
+				padding: 10px;
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 0;
+					height: 0;
+					border: 5px solid transparent;
+					left: -10px;
+                    top: 15px;
+					border-right-color: #fff;
+				}
+				strong {
+					display: block;
+				}
+			}
+		}
+	}
+	.send-form {
+		background: #FFF;
+		width: 100%;
+		padding: 6px;
+		.form {
+			margin: 0;
+			@include display(flex);
+			@include justify-content(space-between);
+			input {
+				border: none;
+				padding: 8px 15px;
+				margin: 0;
+				&:focus {
+					outline: none;
+				}
+				&[type="text"]{
+					background: #eee;
+					flex-grow: 1;
+					border-radius: 5px 0 0 5px;
+
+				}
+				&[type="submit"]{
+					border-radius: 0 5px 5px 0;
+					background: $main-color;
+					color: #fff;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+
+.grid-table {
+	width: 100%;
+	font-size: .95em;
+	td,
+	th {
+		max-width: 450px;
+	}
+	thead {
+		background-color: #EEE;
+	}
+	tfoot {
+		text-align: center;
+		a {
+			background-color: #FFF;
+			padding: 5px 15px;
+			margin: -2px;
+			border: 1px solid #DDD;
+			&:hover {
+				background-color: #eee;
+				text-decoration: none;
+			}
+		}
+	}
+	.table-row-alt {
+		background-color: #f9f9f9;
+	}
+	tbody > tr > td,
+	tbody > tr > th,
+	tfoot > tr > td,
+	tfoot > tr > th,
+	thead > tr > td,
+	thead > tr > th {
+		padding: 7px 10px;
+		text-align: left;
+	}
+}
+
+// Input
+.input-group {
+	margin-bottom: 15px;
+	.field-label {
+		display: inline-block;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+}
+
+.field {
+	background: $background-color;
+	padding: 7px 15px;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	width: 100%;
+	max-width: 350px;
+	&:active,
+	&:focus {
+		outline: 0;
+		border: 2px solid rgba($main-color, .5);
+	}
+	option {
+		background: #fff;
+	}
+}
+
+.button,
+a.button {
+	width: auto;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	background: $main-color;
+	color: #fff;
+	font-weight: bold;
+	@include transition(box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1));
+	&:hover {
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .50);
+		text-decoration: none;
+	}
+	&:active {
+		outline: none;
+		box-shadow: none;
+	}
+	.fa { margin-right: 10px; }
+}
+
+.board {
+	background: $background-color;
+	padding: 20px;
+	border-radius: 5px;
+	min-height: 200px;
+	h3 {
+		font-weight: normal;
+		margin: 0;
+	}
+}
+
+.validation-summary-errors {
+	font-size: .9em;
+	color: rgba(red, .5);
+	border-left: 3px solid rgba(red, .5);
+}
+
+.question-item {
+	code {
+		position: relative;
+		display: block;
+		padding: 15px 15px 15px 40px;
+		background: #333;
+		color: rgb(244, 244, 244);
+		border-radius: 4px;
+		margin-bottom: 15px;
+		&::before {
+			position: absolute;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 0px;
+			border-left: 1px dashed rgb(180, 180, 180);
+			left: 20px;
+			top: 0;
+		}
+	}
+	.options {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		button {
+			border: 0;
+			padding: 5px 10px;
+			border-radius: 4px;
+			margin-bottom: 3px;
+			background: transparent;
+			text-align: left;
+			&:hover {
+				background: #ddd;
+			}
+			&:active, &:focus {
+				outline: none;
+			}
+			&[disabled="disabled"]:hover { background: transparent; }
+		}
+	}
+}
+
+.test-responce {
+	font-size: 18px;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background: $background-color;
+	.correct-count { }
+	.responce {
+		display: none;
+		color: red;
+		&.show { display: block; }
+		&.correct { color: green; }
+	}
+}
+
+.next { margin-top: 15px; display: none }
+.button.next.show { display: inline-block }

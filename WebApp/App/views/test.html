@@ -1,0 +1,24 @@
+<h2>{{ test.title }} Test</h2>
+
+<div class="test-responce">
+	<strong class="correct-count">Correct Anwsers:</strong> {{ correctCount }}
+    <strong class="pull-right responce" ng-class="{show: answered, correct: correctAnswer }">{{ answer() }}</strong>
+</div>
+
+<div class="board">
+
+    <div class="question-item">
+        <strong>
+            {{ questionIndex }}:<br>
+            Code:
+        </strong>
+        <code>{{ currentQuestion.code }}</code>
+        <strong>Question:</strong>
+        <p class="question">{{ currentQuestion.question }}</p>
+        <div class="options">
+            <button ng-repeat="option in currentQuestion.options" ng-disabled="answered" ng-click="sendAnswer(option)">{{ option.option }}</button>
+        </div>
+    </div>
+<!--    <p>{{ message }}</p>-->
+    <button class="button next" ng-class="{show: answered}" ng-click="nextQuestion()">{{ btnValue }} <i class="fa fa-angle-right"></i></button>
+</div>

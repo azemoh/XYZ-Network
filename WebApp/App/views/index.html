@@ -1,0 +1,11 @@
+<h2>Available Tests</h2>
+
+<div class="test-list">
+   <p>You have {{ tests.length }} available tests.</p>
+    <div ng-repeat="test in tests" class="test-item">
+        <strong>{{ test.title }}</strong>
+
+        <span class="num-attempt">Attempts: {{ test.testScores.length }} Students</span>
+		<button class="button" ng-click="taketest(test)">Take Test</button>
+    </div>
+</div>

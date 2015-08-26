@@ -1,0 +1,1905 @@
+@charset "UTF-8";
+/* line 1, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 7, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 23, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 30, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 35, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 41, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 45, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/* line 50, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 54, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 59, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 63, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 67, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 72, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 77, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 82, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 89, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 93, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 97, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 101, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 105, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 109, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 122, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 131, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 137, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 142, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 149, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 155, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 160, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 165, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 170, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 176, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 180, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 188, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 192, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 198, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 203, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 207, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 211, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 217, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/lib/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 1, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12, .col-sm-1, .col-md-1, .col-lg-1,
+.col-sm-2, .col-md-2, .col-lg-2,
+.col-sm-3, .col-md-3, .col-lg-3,
+.col-sm-4, .col-md-4, .col-lg-4,
+.col-sm-5, .col-md-5, .col-lg-5,
+.col-sm-6, .col-md-6, .col-lg-6,
+.col-sm-7, .col-md-7, .col-lg-7,
+.col-sm-8, .col-md-8, .col-lg-8,
+.col-sm-9, .col-md-9, .col-lg-9,
+.col-sm-10, .col-md-10, .col-lg-10,
+.col-sm-11, .col-md-11, .col-lg-11,
+.col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@-ms-viewport {
+  width: device-width; }
+
+/* line 28, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.visible-xs,
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important; }
+
+@media (max-width: 767px) {
+  /* line 34, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-xs,
+  .visible-xs-block {
+    display: block !important; }
+  /* line 37, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-xs-inline {
+    display: inline !important; }
+  /* line 40, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-xs-inline-block {
+    display: inline-block !important; }
+  /* line 43, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .hidden-xs {
+    display: none !important; }
+  /* line 46, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  table.visible-xs {
+    display: table; }
+  /* line 49, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  tr.visible-xs {
+    display: table-row !important; }
+  /* line 53, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 60, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-sm,
+  .visible-sm-block {
+    display: block !important; }
+  /* line 63, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-sm-inline {
+    display: inline !important; }
+  /* line 66, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-sm-inline-block {
+    display: inline-block !important; }
+  /* line 69, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .hidden-sm {
+    display: none !important; }
+  /* line 72, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  table.visible-sm {
+    display: table; }
+  /* line 75, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  tr.visible-sm {
+    display: table-row !important; }
+  /* line 79, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 86, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-md,
+  .visible-md-block {
+    display: block !important; }
+  /* line 89, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-md-inline {
+    display: inline !important; }
+  /* line 92, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-md-inline-block {
+    display: inline-block !important; }
+  /* line 95, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .hidden-md {
+    display: none !important; }
+  /* line 98, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  table.visible-md {
+    display: table; }
+  /* line 101, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  tr.visible-md {
+    display: table-row !important; }
+  /* line 105, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important; } }
+
+@media (min-width: 1200px) {
+  /* line 112, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-lg,
+  .visible-lg-block {
+    display: block !important; }
+  /* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-lg-inline {
+    display: inline !important; }
+  /* line 118, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-lg-inline-block {
+    display: inline-block !important; }
+  /* line 121, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .hidden-lg {
+    display: none !important; }
+  /* line 124, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container {
+    width: 1170px; }
+  /* line 137, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left; }
+  /* line 141, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-1 {
+    width: 8.33333333%; }
+  /* line 142, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-2 {
+    width: 16.66666667%; }
+  /* line 143, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-3 {
+    width: 25%; }
+  /* line 144, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-4 {
+    width: 33.33333333%; }
+  /* line 145, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-5 {
+    width: 41.66666667%; }
+  /* line 146, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-6 {
+    width: 50%; }
+  /* line 147, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-7 {
+    width: 58.33333333%; }
+  /* line 148, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-8 {
+    width: 66.66666667%; }
+  /* line 149, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-9 {
+    width: 75%; }
+  /* line 150, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-10 {
+    width: 83.33333333%; }
+  /* line 151, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-11 {
+    width: 91.66666667%; }
+  /* line 152, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-12 {
+    width: 100%; }
+  /* line 154, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-12 {
+    right: 100%; }
+  /* line 155, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-11 {
+    right: 91.66666667%; }
+  /* line 156, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333%; }
+  /* line 157, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-9 {
+    right: 75%; }
+  /* line 158, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-8 {
+    right: 66.66666667%; }
+  /* line 159, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-7 {
+    right: 58.33333333%; }
+  /* line 160, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-6 {
+    right: 50%; }
+  /* line 161, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-5 {
+    right: 41.66666667%; }
+  /* line 162, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333%; }
+  /* line 163, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-3 {
+    right: 25%; }
+  /* line 164, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-2 {
+    right: 16.66666667%; }
+  /* line 165, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-1 {
+    right: 8.33333333%; }
+  /* line 166, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-pull-0 {
+    right: auto; }
+  /* line 168, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-12 {
+    left: 100%; }
+  /* line 169, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-11 {
+    left: 91.66666667%; }
+  /* line 170, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-10 {
+    left: 83.33333333%; }
+  /* line 171, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-9 {
+    left: 75%; }
+  /* line 172, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-8 {
+    left: 66.66666667%; }
+  /* line 173, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-7 {
+    left: 58.33333333%; }
+  /* line 174, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-6 {
+    left: 50%; }
+  /* line 175, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-5 {
+    left: 41.66666667%; }
+  /* line 176, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-4 {
+    left: 33.33333333%; }
+  /* line 177, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-3 {
+    left: 25%; }
+  /* line 178, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-2 {
+    left: 16.66666667%; }
+  /* line 179, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-1 {
+    left: 8.33333333%; }
+  /* line 180, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-push-0 {
+    left: auto; }
+  /* line 182, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%; }
+  /* line 183, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%; }
+  /* line 184, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%; }
+  /* line 185, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  /* line 186, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%; }
+  /* line 187, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%; }
+  /* line 188, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  /* line 189, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%; }
+  /* line 190, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%; }
+  /* line 191, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  /* line 192, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%; }
+  /* line 193, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%; }
+  /* line 194, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-lg-offset-0 {
+    margin-left: 0; }
+  /* line 196, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  table.visible-lg {
+    display: table; }
+  /* line 199, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  tr.visible-lg {
+    display: table-row !important; }
+  /* line 203, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important; } }
+
+/* line 207, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.visible-print {
+  display: none !important; }
+
+@media print {
+  /* line 212, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-print,
+  .visible-print-block {
+    display: block !important; }
+  /* line 215, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-print-inline {
+    display: inline !important; }
+  /* line 218, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .visible-print-inline-block {
+    display: inline-block !important; }
+  /* line 221, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .hidden-print {
+    display: none !important; }
+  /* line 224, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  table.visible-print {
+    display: table; }
+  /* line 227, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  tr.visible-print {
+    display: table-row !important; }
+  /* line 231, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important; } }
+
+/* line 238, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.visible-print-block,
+.visible-print-inline,
+.visible-print-inline-block {
+  display: none !important; }
+
+/* line 242, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  /* line 248, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container:before,
+  .container:after {
+    content: " ";
+    display: table; }
+  /* line 252, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container:after {
+    clear: both; }
+
+@media (min-width: 768px) {
+  /* line 257, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container {
+    width: 750px; }
+  /* line 272, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left; }
+  /* line 276, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-1 {
+    width: 8.33333333%; }
+  /* line 277, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-2 {
+    width: 16.66666667%; }
+  /* line 278, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-3 {
+    width: 25%; }
+  /* line 279, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-4 {
+    width: 33.33333333%; }
+  /* line 280, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-5 {
+    width: 41.66666667%; }
+  /* line 281, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-6 {
+    width: 50%; }
+  /* line 282, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-7 {
+    width: 58.33333333%; }
+  /* line 283, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-8 {
+    width: 66.66666667%; }
+  /* line 284, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-9 {
+    width: 75%; }
+  /* line 285, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-10 {
+    width: 83.33333333%; }
+  /* line 286, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-11 {
+    width: 91.66666667%; }
+  /* line 287, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-12 {
+    width: 100%; }
+  /* line 289, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-12 {
+    right: 100%; }
+  /* line 290, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-11 {
+    right: 91.66666667%; }
+  /* line 291, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333%; }
+  /* line 292, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-9 {
+    right: 75%; }
+  /* line 293, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-8 {
+    right: 66.66666667%; }
+  /* line 294, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-7 {
+    right: 58.33333333%; }
+  /* line 295, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-6 {
+    right: 50%; }
+  /* line 296, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-5 {
+    right: 41.66666667%; }
+  /* line 297, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333%; }
+  /* line 298, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-3 {
+    right: 25%; }
+  /* line 299, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-2 {
+    right: 16.66666667%; }
+  /* line 300, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-1 {
+    right: 8.33333333%; }
+  /* line 301, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-pull-0 {
+    right: auto; }
+  /* line 303, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-12 {
+    left: 100%; }
+  /* line 304, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-11 {
+    left: 91.66666667%; }
+  /* line 305, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-10 {
+    left: 83.33333333%; }
+  /* line 306, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-9 {
+    left: 75%; }
+  /* line 307, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-8 {
+    left: 66.66666667%; }
+  /* line 308, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-7 {
+    left: 58.33333333%; }
+  /* line 309, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-6 {
+    left: 50%; }
+  /* line 310, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-5 {
+    left: 41.66666667%; }
+  /* line 311, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-4 {
+    left: 33.33333333%; }
+  /* line 312, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-3 {
+    left: 25%; }
+  /* line 313, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-2 {
+    left: 16.66666667%; }
+  /* line 314, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-1 {
+    left: 8.33333333%; }
+  /* line 315, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-push-0 {
+    left: auto; }
+  /* line 317, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%; }
+  /* line 318, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%; }
+  /* line 319, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%; }
+  /* line 320, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  /* line 321, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%; }
+  /* line 322, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%; }
+  /* line 323, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  /* line 324, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%; }
+  /* line 325, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%; }
+  /* line 326, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  /* line 327, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%; }
+  /* line 328, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%; }
+  /* line 329, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-sm-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 992px) {
+  /* line 333, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container {
+    width: 970px; }
+  /* line 349, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left; }
+  /* line 353, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-1 {
+    width: 8.33333333%; }
+  /* line 354, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-2 {
+    width: 16.66666667%; }
+  /* line 355, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-3 {
+    width: 25%; }
+  /* line 356, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-4 {
+    width: 33.33333333%; }
+  /* line 357, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-5 {
+    width: 41.66666667%; }
+  /* line 358, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-6 {
+    width: 50%; }
+  /* line 359, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-7 {
+    width: 58.33333333%; }
+  /* line 360, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-8 {
+    width: 66.66666667%; }
+  /* line 361, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-9 {
+    width: 75%; }
+  /* line 362, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-10 {
+    width: 83.33333333%; }
+  /* line 363, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-11 {
+    width: 91.66666667%; }
+  /* line 364, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-12 {
+    width: 100%; }
+  /* line 366, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-12 {
+    right: 100%; }
+  /* line 367, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-11 {
+    right: 91.66666667%; }
+  /* line 368, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-10 {
+    right: 83.33333333%; }
+  /* line 369, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-9 {
+    right: 75%; }
+  /* line 370, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-8 {
+    right: 66.66666667%; }
+  /* line 371, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-7 {
+    right: 58.33333333%; }
+  /* line 372, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-6 {
+    right: 50%; }
+  /* line 373, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-5 {
+    right: 41.66666667%; }
+  /* line 374, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-4 {
+    right: 33.33333333%; }
+  /* line 375, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-3 {
+    right: 25%; }
+  /* line 376, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-2 {
+    right: 16.66666667%; }
+  /* line 377, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-1 {
+    right: 8.33333333%; }
+  /* line 378, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-pull-0 {
+    right: auto; }
+  /* line 380, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-12 {
+    left: 100%; }
+  /* line 381, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-11 {
+    left: 91.66666667%; }
+  /* line 382, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-10 {
+    left: 83.33333333%; }
+  /* line 383, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-9 {
+    left: 75%; }
+  /* line 384, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-8 {
+    left: 66.66666667%; }
+  /* line 385, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-7 {
+    left: 58.33333333%; }
+  /* line 386, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-6 {
+    left: 50%; }
+  /* line 387, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-5 {
+    left: 41.66666667%; }
+  /* line 388, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-4 {
+    left: 33.33333333%; }
+  /* line 389, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-3 {
+    left: 25%; }
+  /* line 390, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-2 {
+    left: 16.66666667%; }
+  /* line 391, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-1 {
+    left: 8.33333333%; }
+  /* line 392, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-push-0 {
+    left: auto; }
+  /* line 394, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-12 {
+    margin-left: 100%; }
+  /* line 395, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%; }
+  /* line 396, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%; }
+  /* line 397, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  /* line 398, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%; }
+  /* line 399, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%; }
+  /* line 400, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  /* line 401, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%; }
+  /* line 402, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%; }
+  /* line 403, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  /* line 404, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%; }
+  /* line 405, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%; }
+  /* line 406, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .col-md-offset-0 {
+    margin-left: 0; } }
+
+/* line 408, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  /* line 414, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container-fluid:before,
+  .container-fluid:after {
+    content: " ";
+    display: table; }
+  /* line 418, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .container-fluid:after {
+    clear: both; }
+
+/* line 422, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  /* line 426, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .row:before,
+  .row:after {
+    content: " ";
+    display: table; }
+  /* line 430, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+  .row:after {
+    clear: both; }
+
+/* line 447, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  float: left; }
+
+/* line 468, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-1 {
+  width: 8.33333333%; }
+
+/* line 469, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-2 {
+  width: 16.66666667%; }
+
+/* line 470, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-3 {
+  width: 25%; }
+
+/* line 471, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-4 {
+  width: 33.33333333%; }
+
+/* line 472, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-5 {
+  width: 41.66666667%; }
+
+/* line 473, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-6 {
+  width: 50%; }
+
+/* line 474, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-7 {
+  width: 58.33333333%; }
+
+/* line 475, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-8 {
+  width: 66.66666667%; }
+
+/* line 476, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-9 {
+  width: 75%; }
+
+/* line 477, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-10 {
+  width: 83.33333333%; }
+
+/* line 478, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-11 {
+  width: 91.66666667%; }
+
+/* line 479, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-12 {
+  width: 100%; }
+
+/* line 481, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-12 {
+  right: 100%; }
+
+/* line 482, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-11 {
+  right: 91.66666667%; }
+
+/* line 483, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-10 {
+  right: 83.33333333%; }
+
+/* line 484, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-9 {
+  right: 75%; }
+
+/* line 485, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-8 {
+  right: 66.66666667%; }
+
+/* line 486, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-7 {
+  right: 58.33333333%; }
+
+/* line 487, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-6 {
+  right: 50%; }
+
+/* line 488, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-5 {
+  right: 41.66666667%; }
+
+/* line 489, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-4 {
+  right: 33.33333333%; }
+
+/* line 490, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-3 {
+  right: 25%; }
+
+/* line 491, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-2 {
+  right: 16.66666667%; }
+
+/* line 492, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-1 {
+  right: 8.33333333%; }
+
+/* line 493, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-pull-0 {
+  right: auto; }
+
+/* line 495, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-12 {
+  left: 100%; }
+
+/* line 496, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-11 {
+  left: 91.66666667%; }
+
+/* line 497, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-10 {
+  left: 83.33333333%; }
+
+/* line 498, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-9 {
+  left: 75%; }
+
+/* line 499, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-8 {
+  left: 66.66666667%; }
+
+/* line 500, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-7 {
+  left: 58.33333333%; }
+
+/* line 501, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-6 {
+  left: 50%; }
+
+/* line 502, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-5 {
+  left: 41.66666667%; }
+
+/* line 503, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-4 {
+  left: 33.33333333%; }
+
+/* line 504, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-3 {
+  left: 25%; }
+
+/* line 505, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-2 {
+  left: 16.66666667%; }
+
+/* line 506, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-1 {
+  left: 8.33333333%; }
+
+/* line 507, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-push-0 {
+  left: auto; }
+
+/* line 509, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+/* line 510, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666667%; }
+
+/* line 511, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333%; }
+
+/* line 512, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+/* line 513, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666667%; }
+
+/* line 514, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333333%; }
+
+/* line 515, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+/* line 516, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666667%; }
+
+/* line 517, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333%; }
+
+/* line 518, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+/* line 519, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66666667%; }
+
+/* line 520, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333333%; }
+
+/* line 521, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.col-xs-offset-0 {
+  margin-left: 0; }
+
+/* line 526, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.clearfix,
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 530, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 534, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 539, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.pull-right {
+  float: right !important; }
+
+/* line 542, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+.pull-left {
+  float: left !important; }
+
+/* line 548, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_grid.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/*	FONTS
+------------------------*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), local("Rale Way"), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(http://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/*	VARIABLES
+-----------------------------*/
+/*---- Fonts ------*/
+/*---- Break Points -----*/
+/*	TYPOGRAPHY
+–––––––––––––––––––––––––––*/
+/* line 37, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+body {
+  font-family: "Raleway", "Open Sans", "Segoe Ui", Calibri;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: #727272; }
+
+/* line 45, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+p {
+  font-size: 16px;
+  line-height: 1.7; }
+
+/* line 50, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+code {
+  font-family: consolas, 'Courier New'; }
+
+/* --- headings --- */
+/* line 55, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+h1 {
+  font-size: 3em; }
+
+/* line 56, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 57, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+h3 {
+  font-size: 1.6em; }
+
+/* line 58, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+h4 {
+  font-size: 1.2em; }
+
+/* line 59, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+h5 {
+  font-size: 1em; }
+
+/* line 60, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+h6 {
+  font-size: .8em; }
+
+/*  Links and button Transitions
+---------------------------------*/
+/* line 69, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+a {
+  color: rgba(57, 209, 180, 0.7);
+  text-decoration: none;
+  outline: none 0; }
+  /* line 73, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+  a:active, a:hover, a:visited, a:focus {
+    color: #39d1b4;
+    text-decoration: underline;
+    outline: none 0; }
+
+/* line 80, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+hr {
+  margin: 20px 0;
+  border-width: 0;
+  border-top: 1px solid #EEE; }
+
+/* line 86, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 90, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+  nav ul li {
+    display: inline-block; }
+
+/* ------ Normalize ----- */
+/* line 97, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 104, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+.clearfix,
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 108, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+.clearfix:after {
+  clear: both; }
+
+/* ------ Wrapper -------- */
+/* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    /* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+    .wrapper {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    /* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+    .wrapper {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    /* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_base.scss */
+    .wrapper {
+      width: 1170px; } }
+
+/* line 1, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+header {
+  background: #f2f2f2;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  font-size: 13px; }
+  /* line 6, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  header .brand {
+    font-size: 18px; }
+  /* line 9, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  header ul {
+    padding: 3px 0; }
+    /* line 11, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+    header ul li {
+      margin: 0 10px; }
+      /* line 13, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+      header ul li:last-child {
+        margin-right: 0; }
+
+/* line 20, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+#aside {
+  height: 85vh;
+  position: relative; }
+  /* line 23, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  #aside .avatar-lockup {
+    text-align: center;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center; }
+    /* line 29, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+    #aside .avatar-lockup img {
+      margin-bottom: 15px;
+      width: 150px;
+      max-width: 100%;
+      display: block;
+      padding: 5px;
+      border: 1px solid #f2f2f2; }
+  @media screen and (max-width: 768px) {
+    /* line 20, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+    #aside {
+      margin-top: -20px; }
+      /* line 41, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+      #aside .avatar-lockup {
+        text-align: left;
+        float: left; }
+        /* line 44, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+        #aside .avatar-lockup img {
+          margin: 0 20px 0 0;
+          width: 80px; }
+        /* line 48, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+        #aside .avatar-lockup strong {
+          display: none; }
+      /* line 52, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+      #aside nav.side-nav ul {
+        height: 80px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        box-lines: multiple;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+        -webkit-align-content: space-between;
+        -moz-align-content: space-between;
+        align-content: space-between;
+        -ms-flex-line-pack: justify; }
+        /* line 58, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+        #aside nav.side-nav ul li {
+          display: inline; }
+          /* line 60, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+          #aside nav.side-nav ul li a {
+            display: inline-block; }
+      /* line 65, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+      #aside hr {
+        display: none; } }
+  /* line 70, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  #aside nav ul {
+    padding: 3px 0; }
+    /* line 72, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+    #aside nav ul li {
+      display: block;
+      margin: 0; }
+      /* line 75, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+      #aside nav ul li a {
+        display: block;
+        padding: 5px 10px;
+        color: #39D1B4; }
+        /* line 79, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+        #aside nav ul li a .fa {
+          margin-right: 10px; }
+        /* line 82, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+        #aside nav ul li a:hover {
+          text-decoration: none;
+          background: #f2f2f2; }
+  /* line 90, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  #aside .copy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 10px; }
+
+@media screen and (max-width: 768px) {
+  /* line 96, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  aside#aside {
+    height: 100px; }
+    /* line 98, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+    aside#aside .copy {
+      display: none; }
+  /* line 102, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  div#main {
+    border-left: none;
+    border-top: 1px #EEE solid; } }
+
+/* line 108, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+#main {
+  min-height: 85vh;
+  padding-bottom: 50px;
+  border-left: 1px #EEE solid; }
+
+/* line 114, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+.test-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  align-items: center;
+  background: #f8f8f8;
+  border-left: 3px solid #39D1B4;
+  margin-bottom: 20px;
+  padding: 10px 20px; }
+  /* line 122, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .test-item strong {
+    font-size: 20px; }
+  /* line 125, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .test-item .button {
+    font-size: 14px; }
+
+/* line 130, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+.upload-photo {
+  position: relative; }
+  /* line 132, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .upload-photo span {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translateX(50%);
+    display: block;
+    content: "Upload";
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 5px;
+    font-size: 12px;
+    z-index: 9999;
+    border-radius: 5px; }
+  /* line 144, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .upload-photo:hover span {
+    background: rgba(0, 0, 0, 0.4); }
+
+/* line 149, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+.view-head {
+  width: 100%;
+  padding: 0 0 20px; }
+  /* line 152, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .view-head span {
+    display: inline-block; }
+  /* line 155, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .view-head .button {
+    margin-left: 5px; }
+
+/* line 160, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+.board.profile-head {
+  position: relative;
+  padding: 20px 20px 20px 190px;
+  min-height: 150px;
+  margin: 20px 0; }
+  /* line 165, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .board.profile-head img {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    max-width: 150px;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #f2f2f2; }
+  /* line 174, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .board.profile-head h3 {
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 2.5px;
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0; }
+  /* line 185, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+  .board.profile-head div.contact {
+    font-size: .95em; }
+    /* line 187, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_app.scss */
+    .board.profile-head div.contact i {
+      margin-right: 8px; }
+
+/* line 2, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+#messanger {
+  width: 320px;
+  position: fixed;
+  right: 5px;
+  bottom: 0;
+  box-shadow: 0 0 10px #aaa;
+  overflow: hidden; }
+  /* line 3, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  #messanger .body {
+    display: none; }
+  /* line 12, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  #messanger .head {
+    width: 100%;
+    background: #39D1B4;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer; }
+  /* line 21, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  #messanger .message-area {
+    padding: 18px 18px 0;
+    height: 380px;
+    overflow-y: scroll;
+    font-size: 13px;
+    background: #eee; }
+    /* line 28, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    #messanger .message-area::-webkit-scrollbar {
+      width: 8px; }
+    /* line 31, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    #messanger .message-area::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+    /* line 34, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    #messanger .message-area::-webkit-scrollbar-thumb {
+      background-color: #39D1B4;
+      border-radius: 5px; }
+    /* line 39, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    #messanger .message-area .message-item {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: justify;
+      margin-bottom: 20px; }
+      /* line 43, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+      #messanger .message-area .message-item .image {
+        width: 40px; }
+        /* line 45, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+        #messanger .message-area .message-item .image img {
+          border-radius: 4px;
+          max-width: 100%; }
+      /* line 50, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+      #messanger .message-area .message-item .message {
+        width: 82%;
+        background: #fff;
+        border-radius: 4px;
+        padding: 10px;
+        position: relative; }
+        /* line 56, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+        #messanger .message-area .message-item .message::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          left: -10px;
+          top: 15px;
+          border-right-color: #fff; }
+        /* line 67, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+        #messanger .message-area .message-item .message strong {
+          display: block; }
+  /* line 73, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  #messanger .send-form {
+    background: #FFF;
+    width: 100%;
+    padding: 6px; }
+    /* line 77, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    #messanger .send-form .form {
+      margin: 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: justify; }
+      /* line 81, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+      #messanger .send-form .form input {
+        border: none;
+        padding: 8px 15px;
+        margin: 0; }
+        /* line 85, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+        #messanger .send-form .form input:focus {
+          outline: none; }
+        /* line 88, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+        #messanger .send-form .form input[type="text"] {
+          background: #eee;
+          flex-grow: 1;
+          border-radius: 5px 0 0 5px; }
+        /* line 94, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+        #messanger .send-form .form input[type="submit"] {
+          border-radius: 0 5px 5px 0;
+          background: #39D1B4;
+          color: #fff;
+          font-weight: 600; }
+
+/* line 105, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.grid-table {
+  width: 100%;
+  font-size: .95em; }
+  /* line 109, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .grid-table td,
+  .grid-table th {
+    max-width: 450px; }
+  /* line 112, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .grid-table thead {
+    background-color: #EEE; }
+  /* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .grid-table tfoot {
+    text-align: center; }
+    /* line 117, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    .grid-table tfoot a {
+      background-color: #FFF;
+      padding: 5px 15px;
+      margin: -2px;
+      border: 1px solid #DDD; }
+      /* line 122, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+      .grid-table tfoot a:hover {
+        background-color: #eee;
+        text-decoration: none; }
+  /* line 128, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .grid-table .table-row-alt {
+    background-color: #f9f9f9; }
+  /* line 136, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .grid-table tbody > tr > td,
+  .grid-table tbody > tr > th,
+  .grid-table tfoot > tr > td,
+  .grid-table tfoot > tr > th,
+  .grid-table thead > tr > td,
+  .grid-table thead > tr > th {
+    padding: 7px 10px;
+    text-align: left; }
+
+/* line 143, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.input-group {
+  margin-bottom: 15px; }
+  /* line 145, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .input-group .field-label {
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+
+/* line 152, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.field {
+  background: #f2f2f2;
+  padding: 7px 15px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 350px; }
+  /* line 160, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .field:active,
+  .field:focus {
+    outline: 0;
+    border: 2px solid rgba(57, 209, 180, 0.5); }
+  /* line 164, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .field option {
+    background: #fff; }
+
+/* line 170, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.button,
+a.button {
+  width: auto;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: #39D1B4;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+  /* line 179, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .button:hover,
+  a.button:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-decoration: none; }
+  /* line 183, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .button:active,
+  a.button:active {
+    outline: none;
+    box-shadow: none; }
+  /* line 187, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .button .fa,
+  a.button .fa {
+    margin-right: 10px; }
+
+/* line 190, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.board {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 200px; }
+  /* line 195, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .board h3 {
+    font-weight: normal;
+    margin: 0; }
+
+/* line 201, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.validation-summary-errors {
+  font-size: .9em;
+  color: rgba(255, 0, 0, 0.5);
+  border-left: 3px solid rgba(255, 0, 0, 0.5); }
+
+/* line 208, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.question-item code {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 40px;
+  background: #333;
+  color: #f4f4f4;
+  border-radius: 4px;
+  margin-bottom: 15px; }
+  /* line 216, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .question-item code::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0px;
+    border-left: 1px dashed #b4b4b4;
+    left: 20px;
+    top: 0; }
+
+/* line 227, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.question-item .options {
+  display: flex;
+  flex-direction: column;
+  padding: 0; }
+  /* line 231, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .question-item .options button {
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    background: transparent;
+    text-align: left; }
+    /* line 238, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    .question-item .options button:hover {
+      background: #ddd; }
+    /* line 241, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    .question-item .options button:active, .question-item .options button:focus {
+      outline: none; }
+    /* line 244, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    .question-item .options button[disabled="disabled"]:hover {
+      background: transparent; }
+
+/* line 249, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.test-responce {
+  font-size: 18px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #f2f2f2; }
+  /* line 256, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+  .test-responce .responce {
+    display: none;
+    color: red; }
+    /* line 259, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    .test-responce .responce.show {
+      display: block; }
+    /* line 260, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+    .test-responce .responce.correct {
+      color: green; }
+
+/* line 264, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.next {
+  margin-top: 15px;
+  display: none; }
+
+/* line 265, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
+.button.next.show {
+  display: inline-block; }
+
+/*# sourceMappingURL=site.css.map */

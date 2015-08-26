@@ -1,0 +1,27 @@
+@model IEnumerable<WebApp.Models.TestScore>
+
+@{
+    ViewBag.Title = "Test Scores";
+    var grid = new WebGrid(source: Model, canPage: true, rowsPerPage: 10);
+    grid.Pager(WebGridPagerModes.All);
+}
+
+@Html.Partial("_NavPartial")
+
+<div id="main" class="col-sm-9">
+    <h2>@ViewBag.Title</h2>
+
+    @grid.GetHtml(
+        tableStyle: "table table-bordered grid-table",
+        headerStyle: "",
+        footerStyle: "",
+        alternatingRowStyle: "table-row-alt",
+        rowStyle: "",
+        columns: grid.Columns(
+                    grid.Column(columnName: "Id", header: "ID"),
+                    grid.Column(columnName: "Student.User.Name", header: "Name"),
+                    grid.Column(columnName: "Test.Title", header: "Test"),
+                    grid.Column(columnName: "Score", header: "Score")
+            )
+        )
+</div>

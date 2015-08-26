@@ -1,0 +1,33 @@
+@using Microsoft.AspNet.Identity
+@using WebApp.Models
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    var userId = User.Identity.GetUserId();
+    var user = db.Users.Where(u => u.Id == userId).First();
+}
+<input type="hidden" id="username" value="@user.Name">
+
+<div id="messanger">
+    <div class="head">
+        <strong>Messanger</strong>
+    </div>
+    <div class="body">
+        <div class="message-area">
+            <div class="message-item">
+                <div class="image">
+                    <img src="/Content/Images/profile-img.png" alt="Avatar">
+                </div>
+                <div class="message">
+                    <strong>Administrator:</strong>
+                    Hello user! use the messanger to communicate with your friends and collegues in real time.
+                </div>
+            </div>
+        </div>
+        <div class="send-form">
+            <div class="form">
+                <input type="text" id="message" placeholder="Say something...">
+                <input type="submit" id="send" value="Send">
+            </div>
+        </div>
+    </div>
+</div>

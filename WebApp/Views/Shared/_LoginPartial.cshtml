@@ -1,0 +1,21 @@
+@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+@if (Request.IsAuthenticated) {
+
+    var identity = (ClaimsIdentity) User.Identity;
+    var name = identity.FindFirstValue(ClaimTypes.GivenName) ?? identity.GetUserName();
+
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @style = "display: inline" })) {
+        @Html.AntiForgeryToken()
+
+        <ul class="pull-right">
+            <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+            <li><a href="@Url.Action("Index", "Manage")" title="Manage Account"><i class="fa fa-user"></i> @name</a></li>
+
+        </ul>
+    }
+} else {
+    <ul class="pull-right">
+        <li>@Html.ActionLink("Sign in", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

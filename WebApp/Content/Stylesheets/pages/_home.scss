@@ -1,0 +1,128 @@
+body {
+	background-color: $background-color;
+	color: #727272;
+	min-height: 100vh;
+	position: relative;
+	&::before {
+		display: block;
+		content: ' ';
+		height: 3px;
+		background: $main-color;
+	}
+}
+
+
+.brand-name {
+	font-size: 42px;
+	letter-spacing: -2px;
+	font-weight: 300;
+	>span {
+		color: $main-color;
+		font-weight: 700;
+	}
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.main {
+	@media (min-width: 984px) {
+		width: 984px;
+		padding: 0px;
+		margin: 0px auto;
+	}
+	width: 100%;
+	padding: 0 15px 50px;
+
+	.login-left {
+		margin-bottom: 30px;
+	}
+
+	.welcome {
+		padding: 0 30px 20px;
+		h3 {
+			font-weight: 400;
+			margin: 10px 0 5px;
+		}
+		p {
+			margin: 0 0 25px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.welcome {
+		width: 46%;
+		float: left;
+	}
+
+	.login-left {
+		width: 52%;
+		float: left;
+		margin-right: 2%;
+	}
+}
+
+.login-form {
+	max-width: 450px;
+	margin: 0px auto 0;
+	width: 100%;
+	background: #FFF;
+	padding-top: 20px;
+	border-radius: 4px;
+	h2 {
+		font-size: 36px;
+		padding-left: 30px;
+		position: relative;
+		font-weight: 300;
+		margin: 10px 0 20px;
+		&::before {
+			content: " ";
+			position: absolute;
+			left: 0;
+			width: 4px;
+			height: 100%;
+			background: $main-color;
+		}
+	}
+	form {
+		padding: 20px 30px;
+		input.field, input[type="submit"]{
+			background: $background-color;
+			display: block;
+			margin-bottom: 25px;
+			width: 100%;
+			padding: 10px 20px;
+			border: 2px solid transparent;
+			border-radius: 4px;
+			&:focus {
+				outline: 0;
+				border: 2px solid rgba($main-color, .5);
+			}
+		}
+		.remember {
+            padding: 10px 2px;
+			float: right;
+		}
+		input[type="submit"] {
+			width: auto;
+			background: $main-color;
+			color: #fff;
+			transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+			&:hover {
+				box-shadow: 0 1px 3px rgba(0, 0, 0, .50);
+			}
+			&:focus, &:active {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 15px;
+	font-size: 13px;
+	color: #555;
+}

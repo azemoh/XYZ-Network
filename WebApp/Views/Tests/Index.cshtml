@@ -1,0 +1,33 @@
+@model IEnumerable<WebApp.Models.Test>
+@{
+    ViewBag.Title = "Tests";
+    var grid = new WebGrid(source: Model, canPage: true, rowsPerPage: 10);
+    grid.Pager(WebGridPagerModes.All);
+}
+@Html.Partial("_NavPartial")
+
+<div id="main" class="col-sm-9">
+    <h2>@ViewBag.Title</h2>
+    <div class="view-head clearfix">
+        <span class="pull-right">
+            <a href="@Url.Action("Scores", "Tests")" class="button">Test Scores</a>
+
+        </span>
+    </div>
+
+
+    @grid.GetHtml(
+        tableStyle: "table table-bordered grid-table",
+        headerStyle: "",
+        footerStyle: "",
+        alternatingRowStyle: "table-row-alt",
+        rowStyle: "",
+        columns: grid.Columns(
+                    grid.Column(columnName: "TestId", header: "ID"),
+                    grid.Column(columnName: "Title", header: "Name"),
+                    grid.Column(header: "Actions", format: @<text>
+                    @Html.ActionLink("Details", "Details", new { id = item.TestId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.TestId })</text>)
+                                                                                                                  )
+                                                                                                              )
+</div>

@@ -1,0 +1,23 @@
+@{
+    ViewBag.Title = "Tests";
+}
+@Html.Partial("_NavPartial")
+
+<div id="main" class="col-sm-9" ng-app="TestApp">
+    <input type="hidden" value="@ViewBag.userId" id="userid"/>
+    <div ng-view>
+
+    </div>
+</div>
+
+@section _base {
+    <base href="/taketest/">
+}
+
+@section scripts {
+    @Scripts.Render("~/Scripts/angular.min.js")
+    @Scripts.Render("~/Scripts/angular-route.min.js")
+    @Scripts.Render("~/App/app.js")
+    @Scripts.Render("~/App/controllers/homeController.js")
+    @Scripts.Render("~/App/controllers/testController.js")
+}

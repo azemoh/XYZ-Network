@@ -1,0 +1,37 @@
+@using Microsoft.AspNet.Identity
+@using WebApp.Models
+<aside id="aside" class="col-sm-3">
+    <div class="avatar-lockup">
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    var userId = User.Identity.GetUserId();
+    var user = db.Users.Where(u => u.Id == userId).First();
+    if(user.Photo != null) {
+        <img src="data:img;base64,@System.Convert.ToBase64String(user.Photo)" alt="Profile Photo" />
+    } else {
+        <a href="@Url.Action("UploadPhoto", "Manage")" class="upload-photo">
+            <span>Upload</span><img src="~/Content/Images/profile-img.png" alt="Profile Photo">
+        </a>
+    }
+}
+        <strong>@user.Name</strong>
+    </div>
+    <hr>
+    <nav class="side-nav">
+        <ul>
+            @if(User.IsInRole("Admin")) {
+                <li><a href="@Url.Action("Admin", "Home")"><i class="fa fa-desktop"></i>Dashboard</a></li>
+                <li><a href="@Url.Action("Index", "Student")"><i class="fa fa-users"></i>Students</a></li>
+                <li><a href="@Url.Action("Index", "Tests")"><i class="fa fa-book"></i>Tests</a></li>
+                <li><a href="@Url.Action("Index", "Manage")"><i class="fa fa-gear"></i>Account</a></li>
+            } else if(User.IsInRole("Student")) {
+                <li><a href="@Url.Action("Student", "Home")"><i class="fa fa-desktop"></i>Dashboard</a></li>
+                <li><a href="@Url.Action("Index", "TakeTest")"><i class="fa fa-book"></i>Tests</a></li>
+                <li><a href="@Url.Action("Index", "Manage")"><i class="fa fa-gear"></i>Account</a></li>
+            }
+        </ul>
+
+    </nav>
+
+    <small class="copy">&copy; XYZ School Net. 2015</small>
+</aside>

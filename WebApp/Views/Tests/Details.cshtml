@@ -1,0 +1,17 @@
+@model WebApp.Models.Test
+
+@{
+    ViewBag.Title = Model.Title + " Test Details";
+}
+@Html.Partial("_NavPartial")
+
+<div id="main" class="col-sm-9">
+    <h2>@ViewBag.Title</h2>
+
+    <a href="@Url.Action("Index", "Tests")" class="button">
+        <i class="fa fa-angle-left"></i> Back to list
+    </a>
+
+    <p>@Model.TestScores.Count Students have taken this test</p>
+
+</div>

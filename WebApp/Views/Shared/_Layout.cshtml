@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - XYZ School Network</title>
+    @RenderSection("_base", required: false)
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="container">
+                <strong class="brand">XYZ School Network</strong>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        @RenderBody()
+
+    </div>
+    @Html.Partial("_Messanger")
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript" src="~/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="@Url.Content("~/signalr/hubs")"></script>
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
