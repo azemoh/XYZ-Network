@@ -21,7 +21,6 @@ namespace WebApp {
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                    "~/Content/Stylesheets/lib/font-awesome.min.css",
                     "~/Content/Stylesheets/site.css"));
         }
     }
