@@ -204,7 +204,6 @@
     <Content Include="App\views\report.html" />
     <Content Include="App\views\rules.html" />
     <Content Include="App\views\test.html" />
-    <Content Include="Content\Images\avatar460.jpg" />
     <Content Include="Content\Images\profile-img.png" />
     <Content Include="Content\Stylesheets\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Stylesheets\index.css" />
