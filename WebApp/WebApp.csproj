@@ -179,6 +179,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="ChatHub.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DashController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -254,8 +255,8 @@
     <Content Include="Scripts\respond.min.js.map">
       <DependentUpon>respond.min.js</DependentUpon>
     </Content>
-    <None Include="Views\Home\Admin.cshtml" />
-    <None Include="Views\Home\Student.cshtml" />
+    <None Include="Views\Dash\Admin.cshtml" />
+    <None Include="Views\Dash\Student.cshtml" />
     <Content Include="Views\Student\Details.cshtml">
       <SubType>Code</SubType>
     </Content>
