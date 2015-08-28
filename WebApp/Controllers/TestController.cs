@@ -11,7 +11,7 @@ using WebApp.Models;
 namespace WebApp.Controllers {
 
     public class TestController : ApiController {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private WebAppDbContext db = new WebAppDbContext();
 
         // GET: api/Tests
         //public IQueryable<Test> GetTests() {
@@ -97,7 +97,7 @@ namespace WebApp.Controllers {
 
 
     public class TestScoreController : ApiController {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private WebAppDbContext db = new WebAppDbContext();
 
         //GET: api/TestScore
         [ResponseType(typeof(TestScore))]

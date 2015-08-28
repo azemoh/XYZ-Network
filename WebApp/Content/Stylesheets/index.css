@@ -455,15 +455,16 @@ body {
       width: auto;
       background: #39D1B4;
       color: #fff;
+      font-weight: bold;
       transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1); }
-      /* line 111, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_home.scss */
+      /* line 112, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_home.scss */
       .login-form form input[type="submit"]:hover {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
-      /* line 114, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_home.scss */
+      /* line 115, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_home.scss */
       .login-form form input[type="submit"]:focus, .login-form form input[type="submit"]:active {
         box-shadow: none; }
 
-/* line 121, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_home.scss */
+/* line 122, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/pages/_home.scss */
 footer {
   width: 100%;
   position: absolute;

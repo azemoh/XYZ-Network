@@ -1,4 +1,5 @@
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System;
@@ -12,10 +13,9 @@ using WebApp.Models;
 
 namespace WebApp.Controllers {
 
-    [Authorize(Roles = "Admin")]
     public class StudentController : Controller {
 
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private WebAppDbContext db = new WebAppDbContext();
 
         // GET: Student/
         public ActionResult Index() {
@@ -45,7 +45,7 @@ namespace WebApp.Controllers {
             if(student == null) {
                 return HttpNotFound();
             }
-            var service = new StudentService(HttpContext.GetOwinContext().Get<ApplicationDbContext>());
+            var service = new StudentService(HttpContext.GetOwinContext().Get<WebAppDbContext>());
             var model = service.MapStudent(user);
             var gender = new List<Gender> {
                 new Gender { Sex = "Male", Value = "Male" },
@@ -63,7 +63,7 @@ namespace WebApp.Controllers {
         public ActionResult Edit(EditStudentViewModel model) {
 
             if(ModelState.IsValid) {
-                var service = new StudentService(HttpContext.GetOwinContext().Get<ApplicationDbContext>());
+                var service = new StudentService(HttpContext.GetOwinContext().Get<WebAppDbContext>());
                 service.EditStudent(model);
                 return RedirectToAction("Index");
             }
@@ -89,8 +89,14 @@ namespace WebApp.Controllers {
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id) {
             Student student = db.Students.Find(id);
+            
+            var user = db.Users.Find(student.UserId);
+
+            db.Users.Remove(user);
             db.Students.Remove(student);
             db.SaveChanges();
+
+
             return RedirectToAction("Index");
         }
 

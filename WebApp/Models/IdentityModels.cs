@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace WebApp.Models {
 
-
     public class User : IdentityUser {
 
         [StringLength(50)]

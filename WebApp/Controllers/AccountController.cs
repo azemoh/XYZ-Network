@@ -17,12 +17,12 @@ namespace WebApp.Controllers {
     [Authorize]
     public class AccountController : Controller {
         private ApplicationSignInManager _signInManager;
-        private UserManager _userManager;
+        private ApplicationUserManager _userManager;
 
         public AccountController() {
         }
 
-        public AccountController(UserManager userManager, ApplicationSignInManager signInManager) {
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager) {
             UserManager = userManager;
             SignInManager = signInManager;
         }
@@ -36,9 +36,9 @@ namespace WebApp.Controllers {
             }
         }
 
-        public UserManager UserManager {
+        public ApplicationUserManager UserManager {
             get {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<UserManager>();
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
             }
             private set {
                 _userManager = value;
@@ -74,7 +74,7 @@ namespace WebApp.Controllers {
                     UserManager.AddToRole(user.Id, user.AccountType);
 
                     if(user.AccountType == "Student") {
-                        var service = new StudentService(HttpContext.GetOwinContext().Get<ApplicationDbContext>());
+                        var service = new StudentService(HttpContext.GetOwinContext().Get<WebAppDbContext>());
                         // Add Student
                         service.AddStudent(user.Id);
                     }
@@ -82,9 +82,9 @@ namespace WebApp.Controllers {
 
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
-                    // string Code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    // string Code = await ApplicationUserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, Code = Code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    // await ApplicationUserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
                     return RedirectToAction("List", "Student");
                 }
@@ -129,9 +129,9 @@ namespace WebApp.Controllers {
 
                 // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                 // Send an email with this link
-                // string Code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
+                // string Code = await ApplicationUserManager.GeneratePasswordResetTokenAsync(user.Id);
                 // var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, Code = Code }, protocol: Request.Url.Scheme);
-                // await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                // await ApplicationUserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
                 // return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
 

@@ -185,14 +185,10 @@
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TestsController.cs" />
     <Compile Include="DAL\Services.cs" />
+    <Compile Include="DAL\WebAppDbInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201508201832030_Initial.cs" />
-    <Compile Include="Migrations\201508201832030_Initial.Designer.cs">
-      <DependentUpon>201508201832030_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -219,7 +215,7 @@
     <Content Include="Content\Stylesheets\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\WebAppDbContext.cs" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.min.js" />
     <Content Include="Scripts\angular-route.min.js" />
@@ -347,7 +343,12 @@
     </Content>
     <None Include="Views\Home\Admin.cshtml" />
     <None Include="Views\Home\Student.cshtml" />
-    <Content Include="Web.config" />
+    <Content Include="Views\Student\Details.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -379,20 +380,14 @@
     <Content Include="Views\TakeTest\Index.cshtml" />
     <Content Include="Views\Manage\UploadPhoto.cshtml" />
     <Content Include="Views\Shared\_Messanger.cshtml" />
-    <Content Include="Views\Student\Details.cshtml" />
     <Content Include="Views\Student\Edit.cshtml" />
+    <Content Include="Views\Student\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201508201832030_Initial.resx">
-      <DependentUpon>201508201832030_Initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -412,7 +407,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57025</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63837/</IISUrl>
+          <IISUrl>http://localhost:63089/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

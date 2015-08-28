@@ -9,7 +9,7 @@ using WebApp.Models;
 namespace WebApp.Controllers {
 
     public class TestsController : Controller {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private WebAppDbContext db = new WebAppDbContext();
 
         // GET: Tests
         public async Task<ActionResult> Index() {
@@ -69,7 +69,7 @@ namespace WebApp.Controllers {
 
     public class TakeTestController : Controller {
 
-        ApplicationDbContext db = new ApplicationDbContext();
+        WebAppDbContext db = new WebAppDbContext();
 
         // GET: TakeTest
         [Authorize(Roles="Student")]

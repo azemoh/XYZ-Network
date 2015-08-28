@@ -3,7 +3,7 @@
 <aside id="aside" class="col-sm-3">
     <div class="avatar-lockup">
 @{
-    ApplicationDbContext db = new ApplicationDbContext();
+    WebAppDbContext db = new WebAppDbContext();
     var userId = User.Identity.GetUserId();
     var user = db.Users.Where(u => u.Id == userId).First();
     if(user.Photo != null) {

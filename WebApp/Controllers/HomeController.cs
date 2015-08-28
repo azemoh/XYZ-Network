@@ -8,12 +8,12 @@ namespace WebApp.Controllers {
     public class HomeController : Controller {
 
         private ApplicationSignInManager _signInManager;
-        private UserManager _userManager;
+        private ApplicationUserManager _userManager;
 
         public HomeController() {
         }
 
-        public HomeController(UserManager userManager, ApplicationSignInManager signInManager) {
+        public HomeController(ApplicationUserManager userManager, ApplicationSignInManager signInManager) {
             UserManager = userManager;
             SignInManager = signInManager;
         }
@@ -27,9 +27,9 @@ namespace WebApp.Controllers {
             }
         }
 
-        public UserManager UserManager {
+        public ApplicationUserManager UserManager {
             get {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<UserManager>();
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
             }
             private set {
                 _userManager = value;

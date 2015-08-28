@@ -9,9 +9,9 @@ namespace WebApp.DAL {
 
     public class StudentService {
 
-        private ApplicationDbContext db;
+        private WebAppDbContext db;
 
-        public StudentService(ApplicationDbContext dbContext) {
+        public StudentService(WebAppDbContext dbContext) {
             db = dbContext;
         }
 
