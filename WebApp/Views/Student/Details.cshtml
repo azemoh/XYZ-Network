@@ -40,7 +40,7 @@
         <h4>Test Scores:</h4>
         @if(Model.TestScores.Count != 0) {
             foreach(WebApp.Models.TestScore t in Model.TestScores) {
-                <strong>@t.Test.Title :</strong> @t.Score
+                <strong>@t.Test.Title :</strong> @t.Score <br/>
             }
         } else {
             <p>This Student have not taken any test.</p>
