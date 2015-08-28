@@ -20,12 +20,12 @@
     <nav class="side-nav">
         <ul>
             @if(User.IsInRole("Admin")) {
-                <li><a href="@Url.Action("Admin", "Home")"><i class="fa fa-desktop"></i>Dashboard</a></li>
+                <li><a href="@Url.Action("Administrator", "Home")"><i class="fa fa-desktop"></i>Dashboard</a></li>
                 <li><a href="@Url.Action("Index", "Student")"><i class="fa fa-users"></i>Students</a></li>
                 <li><a href="@Url.Action("Index", "Tests")"><i class="fa fa-book"></i>Tests</a></li>
                 <li><a href="@Url.Action("Index", "Manage")"><i class="fa fa-gear"></i>Account</a></li>
             } else if(User.IsInRole("Student")) {
-                <li><a href="@Url.Action("Student", "Home")"><i class="fa fa-desktop"></i>Dashboard</a></li>
+                <li><a href="@Url.Action("Students", "Home")"><i class="fa fa-desktop"></i>Dashboard</a></li>
                 <li><a href="@Url.Action("Index", "TakeTest")"><i class="fa fa-book"></i>Tests</a></li>
                 <li><a href="@Url.Action("Index", "Manage")"><i class="fa fa-gear"></i>Account</a></li>
             }
