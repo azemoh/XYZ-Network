@@ -192,9 +192,3 @@ ModelManifest.xml
 
 *.map
 *.scss
-/WebApp/Content/Stylesheets/index.scss
-/WebApp/Content/Stylesheets/site.scss
-/WebApp/Content/Stylesheets/includes/
-/WebApp/Content/Stylesheets/lib/_normalize.scss
-/WebApp/Content/Stylesheets/lib/bourbon/
-/WebApp/Content/Stylesheets/pages/
