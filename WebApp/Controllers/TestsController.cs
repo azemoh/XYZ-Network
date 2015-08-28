@@ -8,6 +8,7 @@ using WebApp.Models;
 
 namespace WebApp.Controllers {
 
+    [Authorize(Roles="Admin")]
     public class TestsController : Controller {
         private WebAppDbContext db = new WebAppDbContext();
 
