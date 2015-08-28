@@ -79,14 +79,16 @@ namespace WebApp.Controllers {
         }
 
         // GET: /Home/Admin
+        [HttpGet]
         [Authorize(Roles="Admin")]
-        public ActionResult Admin() {
+        public ActionResult Administrator() {
             return View();
         }
 
         // GET: /Home/Student
+        [HttpGet]
         [Authorize(Roles = "Student")]
-        public ActionResult Student() {
+        public ActionResult Students() {
             return View();
         }
 
@@ -100,10 +102,10 @@ namespace WebApp.Controllers {
 
             if(User.IsInRole("Admin")) {
 
-                return RedirectToAction("Admin", "Home");
+                return RedirectToAction("Administrator", "Home");
             } else if(User.IsInRole("Student")) {
 
-                return RedirectToAction("Student", "Home");
+                return RedirectToAction("Students", "Home");
             } else {
 
                 return RedirectToAction("Index", "Home");
