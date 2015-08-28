@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -254,8 +254,8 @@
     <Content Include="Scripts\respond.min.js.map">
       <DependentUpon>respond.min.js</DependentUpon>
     </Content>
-    <None Include="Views\Dash\Admin.cshtml" />
-    <None Include="Views\Dash\Student.cshtml" />
+    <None Include="Views\Home\Admin.cshtml" />
+    <None Include="Views\Home\Student.cshtml" />
     <Content Include="Views\Student\Details.cshtml">
       <SubType>Code</SubType>
     </Content>

@@ -78,7 +78,18 @@ namespace WebApp.Controllers {
             }
         }
 
-        
+        // GET: /Home/Admin
+        [Authorize(Roles="Admin")]
+        public ActionResult Admin() {
+            return View();
+        }
+
+        // GET: /Home/Student
+        [Authorize(Roles = "Student")]
+        public ActionResult Student() {
+            return View();
+        }
+
         // Redirect Users based on roles
         [Route("Home/RedirectUser/{returnUrl}")]
         public ActionResult RedirectUser(string returnUrl) {
@@ -89,10 +100,10 @@ namespace WebApp.Controllers {
 
             if(User.IsInRole("Admin")) {
 
-                return RedirectToAction("Admin", "Dash");
+                return RedirectToAction("Admin", "Home");
             } else if(User.IsInRole("Student")) {
 
-                return RedirectToAction("Student", "Dash");
+                return RedirectToAction("Student", "Home");
             } else {
 
                 return RedirectToAction("Index", "Home");
@@ -116,16 +127,4 @@ namespace WebApp.Controllers {
         }
     }
 
-    [Authorize]
-    public class DashController : Controller {
-        // GET: Dash/Admin
-        public ActionResult Admin() {
-            return View();
-        }
-
-        // GET: Dash/Student
-        public ActionResult Student() {
-            return View();
-        }
-    }
 }
