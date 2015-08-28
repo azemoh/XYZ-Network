@@ -10,7 +10,6 @@ using WebApp.Models;
 
 namespace WebApp.Controllers {
 
-    [Authorize]
     public class TestController : ApiController {
         private WebAppDbContext db = new WebAppDbContext();
 

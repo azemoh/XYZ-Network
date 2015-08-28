@@ -13,7 +13,6 @@ using WebApp.Models;
 
 namespace WebApp.Controllers {
 
-    [Authorize(Roles=("Admin"))]
     public class StudentController : Controller {
 
         private WebAppDbContext db = new WebAppDbContext();
