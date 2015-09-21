@@ -77,7 +77,7 @@ namespace WebApp.Models {
         [JsonIgnore]
         public virtual TestQuestion Question { get; set; }
 
-        ///[JsonIgnore]
+        //[JsonIgnore]
         public bool IsCorrect { get; set; }
     }
 

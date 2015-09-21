@@ -36,7 +36,7 @@ namespace WebApp.Controllers {
             }
         }
 
-        // GET: /Home
+        // GET: /Home/Index
         public ActionResult Index(string returnUrl) {
 
             if(User.Identity.IsAuthenticated) {
@@ -62,7 +62,7 @@ namespace WebApp.Controllers {
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch(result) {
                 case SignInStatus.Success:
-                    //return RedirectToLocal(returnUrl);
+                    
                     return RedirectToAction("RedirectUser", "Home");
 
                 case SignInStatus.LockedOut:

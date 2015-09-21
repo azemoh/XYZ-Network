@@ -95,8 +95,7 @@ namespace WebApp.Controllers {
             db.Users.Remove(user);
             db.Students.Remove(student);
             db.SaveChanges();
-
-
+            
             return RedirectToAction("Index");
         }
 
