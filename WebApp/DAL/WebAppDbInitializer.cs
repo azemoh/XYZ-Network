@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System.Data.Entity.Migrations;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
-using WebApp.Models;
 using System.Security.Claims;
+using WebApp.Models;
 
 namespace WebApp.DAL {
 

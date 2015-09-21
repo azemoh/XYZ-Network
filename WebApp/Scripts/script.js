@@ -1,7 +1,7 @@
 /*global $*/
 $(function () {
-	$("#messanger .head").click(function () {
-		$("#messanger .body").slideToggle();
+	$("#messenger .head").click(function () {
+		$("#messenger .body").slideToggle();
 	});
 
 

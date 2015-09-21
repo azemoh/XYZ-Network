@@ -1597,7 +1597,7 @@ header {
       margin-right: 8px; }
 
 /* line 2, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-#messanger {
+#messenger {
   width: 320px;
   position: fixed;
   right: 5px;
@@ -1605,10 +1605,10 @@ header {
   box-shadow: 0 0 10px #aaa;
   overflow: hidden; }
   /* line 3, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-  #messanger .body {
+  #messenger .body {
     display: none; }
   /* line 12, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-  #messanger .head {
+  #messenger .head {
     width: 100%;
     background: #39D1B4;
     color: #fff;
@@ -1617,24 +1617,24 @@ header {
     padding: 5px;
     cursor: pointer; }
   /* line 21, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-  #messanger .message-area {
+  #messenger .message-area {
     padding: 18px 18px 0;
     height: 380px;
     overflow-y: scroll;
     font-size: 13px;
     background: #eee; }
     /* line 28, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-    #messanger .message-area::-webkit-scrollbar {
+    #messenger .message-area::-webkit-scrollbar {
       width: 8px; }
     /* line 31, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-    #messanger .message-area::-webkit-scrollbar-track {
+    #messenger .message-area::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
     /* line 34, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-    #messanger .message-area::-webkit-scrollbar-thumb {
+    #messenger .message-area::-webkit-scrollbar-thumb {
       background-color: #39D1B4;
       border-radius: 5px; }
     /* line 39, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-    #messanger .message-area .message-item {
+    #messenger .message-area .message-item {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -1653,21 +1653,21 @@ header {
       -ms-flex-pack: justify;
       margin-bottom: 20px; }
       /* line 43, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-      #messanger .message-area .message-item .image {
+      #messenger .message-area .message-item .image {
         width: 40px; }
         /* line 45, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-        #messanger .message-area .message-item .image img {
+        #messenger .message-area .message-item .image img {
           border-radius: 4px;
           max-width: 100%; }
       /* line 50, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-      #messanger .message-area .message-item .message {
+      #messenger .message-area .message-item .message {
         width: 82%;
         background: #fff;
         border-radius: 4px;
         padding: 10px;
         position: relative; }
         /* line 56, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-        #messanger .message-area .message-item .message::before {
+        #messenger .message-area .message-item .message::before {
           content: '';
           position: absolute;
           display: block;
@@ -1678,15 +1678,15 @@ header {
           top: 15px;
           border-right-color: #fff; }
         /* line 67, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-        #messanger .message-area .message-item .message strong {
+        #messenger .message-area .message-item .message strong {
           display: block; }
   /* line 73, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-  #messanger .send-form {
+  #messenger .send-form {
     background: #FFF;
     width: 100%;
     padding: 6px; }
     /* line 77, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-    #messanger .send-form .form {
+    #messenger .send-form .form {
       margin: 0;
       display: -webkit-box;
       display: -moz-box;
@@ -1705,20 +1705,20 @@ header {
       justify-content: space-between;
       -ms-flex-pack: justify; }
       /* line 81, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-      #messanger .send-form .form input {
+      #messenger .send-form .form input {
         border: none;
         padding: 8px 15px;
         margin: 0; }
         /* line 85, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-        #messanger .send-form .form input:focus {
+        #messenger .send-form .form input:focus {
           outline: none; }
         /* line 88, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-        #messanger .send-form .form input[type="text"] {
+        #messenger .send-form .form input[type="text"] {
           background: #eee;
           flex-grow: 1;
           border-radius: 5px 0 0 5px; }
         /* line 94, C:/Users/Joshua/Documents/Visual Studio 2013/Projects/WebApp/WebApp/Content/Stylesheets/includes/_components.scss */
-        #messanger .send-form .form input[type="submit"] {
+        #messenger .send-form .form input[type="submit"] {
           border-radius: 0 5px 5px 0;
           background: #39D1B4;
           color: #fff;
