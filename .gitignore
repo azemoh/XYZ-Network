@@ -191,5 +191,6 @@ ModelManifest.xml
 /WebApp/Migrations/
 
 *.map
-*.scss
+*.log
 /.vs/
+WebApp/Content/Stylesheets/lib/bourbon/
