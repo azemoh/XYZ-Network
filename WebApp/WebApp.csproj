@@ -186,7 +186,6 @@
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TestsController.cs" />
     <Compile Include="DAL\Services.cs" />
-    <Compile Include="DAL\WebAppDbInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
