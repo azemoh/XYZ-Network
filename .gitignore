@@ -187,8 +187,9 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+
 /WebApp/Content/Images/avatar460.jpg
-/WebApp/Migrations/
 
 *.map
 *.log

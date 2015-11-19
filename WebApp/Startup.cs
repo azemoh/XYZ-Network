@@ -1,7 +1,7 @@
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(WebApp.Startup))]
+[assembly: OwinStartup(typeof(WebApp.Startup))]
 
 namespace WebApp {
 

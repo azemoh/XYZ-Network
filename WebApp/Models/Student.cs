@@ -15,7 +15,7 @@ namespace WebApp.Models {
         public int StudentId { get; set; }
 
         [Required]
-        public String UserId { get; set; }
+        public string UserId { get; set; }
 
         [JsonIgnore]
         public virtual User User { get; set; }
@@ -26,7 +26,7 @@ namespace WebApp.Models {
 
     public class EditStudentViewModel {
 
-        public String UserId { get; set; }
+        public string UserId { get; set; }
 
         [StringLength(50)]
         public string FirstName { get; set; }

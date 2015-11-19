@@ -13,7 +13,7 @@ namespace WebApp {
 
         protected void Application_Start() {
 
-            Database.SetInitializer<WebAppDbContext>(new WebAppDbInitializer());
+            Database.SetInitializer(new WebAppDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
