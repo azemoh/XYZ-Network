@@ -28,8 +28,7 @@ namespace WebApp.Models {
       modelBuilder.Entity<IdentityUserLogin>().ToTable("UserLogin");
       modelBuilder.Entity<IdentityUserClaim>().ToTable("UserClaim").Property(p => p.Id).HasColumnName("UserClaimId");
       modelBuilder.Entity<IdentityRole>().ToTable("Role").Property(p => p.Id).HasColumnName("RoleId");
-
-      Database.SetInitializer(new MigrateDatabaseToLatestVersion<WebAppDbContext, Migrations.Configuration>());
+      
     }
   }
 }
